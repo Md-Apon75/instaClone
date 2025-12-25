@@ -51,7 +51,7 @@ export const viewStory = async (req, res) => {
 export const getStoryByUserName = async(req,res)=>{
   try {
     const userName = req.params.userName
-    const user = await User.findOne({username})
+    const user = await User.findOne({ userName: userName })
     if(!user){
         return res.status(400).json({message:"user not found"})
     }
