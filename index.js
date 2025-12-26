@@ -11,7 +11,7 @@ import storyRouter from './routes/storyRoute.js'
 dotenv.config()
 const app = express()
 app.use(cors({
-    origin: ["https://insta-frontend-mx16.vercel.app", "http://localhost:5173"],
+    origin: ["https://insta-frontend-mx16.vercel.app", "http://localhost:5173"], 
     credentials: true
 }));
 app.use(cookieParser())
